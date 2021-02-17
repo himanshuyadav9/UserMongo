@@ -1,0 +1,17 @@
+package com.magic.service;
+
+import org.springframework.stereotype.Service;
+
+import com.magic.dao.User;
+
+import reactor.core.publisher.Flux;
+
+@Service
+public class UserService implements IUserService {
+	
+	
+	@Override
+	public Flux<User> getAllUser(){
+		
+	}
+}
