@@ -3,13 +3,15 @@ package com.magic.dao;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection ="userData")
+@Document(collection ="userdata")
 public class User {
 	
 	@Id
 	private String userId;
 	private String name;
 	private int age;
+	public User() {}
+	
 	public User(String userId, String name, int age) {
 		this.userId = userId;
 		this.name = name;
